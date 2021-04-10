@@ -1,7 +1,9 @@
 name: Typecho Build Dev Ci
 
-on: [push, pull_request]
-
+on:
+  watch:
+    types: [started]
+    
 jobs:
   php:
     name: PHP ${{ matrix.php }} Tests
